@@ -7,20 +7,21 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">123</div>
   <script>
     window.$docsify = {
         coverpage: false,
         loadSidebar: true,
         loadNavbar: false,
-        timeUpdater: {
-            text: "<div id='update-time' align='right'>update : {docsify-updated}</div>",
-            formatUpdated: "{YY}.{MM}.{DD}",
-            whereToPlace: "top",  // "top" or "bottom", default to "bottom"
-        },
+        // timeUpdater: {
+        //     text: "<div id='update-time' align='right'>update : {docsify-updated}</div>",
+        //     formatUpdated: "{YY}.{MM}.{DD}",
+        //     whereToPlace: "top",  // "top" or "bottom", default to "bottom"
+        // },
+        formatUpdated: '{MM}/{DD} {HH}:{mm}',
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script> -->
 </body>
 </html>
